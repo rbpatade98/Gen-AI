@@ -36,6 +36,9 @@ const interviewRouter = require("./routes/interview.routes")
 
 
 /* using all the routes here */
+app.get("/", (req, res) => {
+    res.json({ message: "Server is running! ", status: "Healthy" })
+})
 app.use("/api/auth", authRouter)
 app.use("/api/interview", interviewRouter)
 

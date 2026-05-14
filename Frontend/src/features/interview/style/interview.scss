@@ -110,6 +110,35 @@ $severity-low: #3fb950;
         align-items: center;
         flex-shrink: 0;
     }
+
+    .nav-footer {
+        margin-top: auto;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba($border-color, 0.5);
+
+        .logout-link {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            width: 100%;
+            padding: 0.65rem 0.75rem;
+            background: none;
+            border: none;
+            color: $text-muted;
+            font-family: $font-stack;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: color 0.15s;
+
+            &:hover {
+                color: $accent;
+            }
+
+            svg {
+                opacity: 0.7;
+            }
+        }
+    }
 }
 
 // ── Center Content ────────────────────────────────────────────────────────────
